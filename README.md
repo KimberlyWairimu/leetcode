@@ -65,4 +65,4 @@ Since binary search halves the search space in each step, this runs in O(log x) 
 
 ## 4. LeetCode Submission
 
-[View my Submission] (https://leetcode.com/problems/sqrtx/submissions/1562464591/)
+[View my Submission](https://leetcode.com/problems/sqrtx/submissions/1562464591/)
