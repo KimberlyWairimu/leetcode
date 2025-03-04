@@ -49,7 +49,7 @@ Instead of using recursion (which has **O(2ⁿ) exponential time complexity**), 
 
   - Take a 2-step from n=1, inheriting its count (which is 1).
 
-  - Total ways for n=3 = ways(n-1) + ways(n-2) = 2 + 1 = 3.
+  - Total ways for n=3 = **ways(n-1) + ways(n-2)** = 2 + 1 = 3.
 
   This pattern continues, forming a Fibonacci-like sequence.
 
@@ -62,3 +62,16 @@ We only store the last two computed values, reducing space complexity to O(1).
 
 - We start with the base values (1 step → 1 way, 2 steps → 2 ways).
 - We iteratively compute the next step using a + b (Sum of the previous two steps).
+
+## Performance and Complexity Analysis
+
+| Metric               | Value        | Performance                            |
+| -------------------- | ------------ | -------------------------------------- |
+| **Time Complexity**  | `O(n)`       | We iterate once from `3` to `n`        |
+| **Space Complexity** | `O(1)`       | Only two variables (`a`, `b`) are used |
+| **Runtime**          | **42 ms**    | Beats **0.11%** of Python submissions  |
+| **Memory Usage**     | **17.74 MB** | Beats **48.60%** of Python submissions |
+
+### LeetCode Submission
+
+[View My Submission](https://leetcode.com/problems/climbing-stairs/submissions/1562324621/)
