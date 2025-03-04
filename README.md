@@ -30,7 +30,7 @@ Constraints:
 
 ## 2. Solution (Binary Search Approach)
 
-Instead of using **brute force** (which runs in O(√x) time), we optimize by applying **binary search** to efficiently locate the largest integer mid such that **mid² ≤ x.**
+Instead of using **linear search** (which runs in O(√x) time), we optimize by applying **binary search** to efficiently locate the largest integer mid such that **mid² ≤ x.**
 
 ### Thought Process:
 
@@ -52,7 +52,7 @@ The loop stops when lower > upper, and the correct answer is upper, since it hol
 
 **3. Efficiency**
 
-Since binary search halves the search space in each step, this runs in O(log x) time, making it much faster than a brute force approach (O(√x)).
+Since binary search halves the search space in each step, this runs in O(log x) time, making it much faster than a linear search approach (O(√x)).
 
 ## 3. Performance and Complexity Analysis
 
