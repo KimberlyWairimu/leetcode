@@ -1,6 +1,6 @@
 # Climbing Stairs (Leetcode 70)
 
-## Problem Statement
+## 1.Problem Statement
 
 You are climbing a staircase. It takes n steps to reach the top.
 
@@ -33,7 +33,7 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 
 1 <= n <= 45
 
-## Solution: Dynamic Programming (Optimized Fibonacci Approach)
+## 2.Solution: Dynamic Programming (Optimized Fibonacci Approach)
 
 Instead of using recursion (which has **O(2ⁿ) exponential time complexity**), we optimize the approach by recognizing that this problem follows the **Fibonacci sequence.**
 
@@ -63,7 +63,7 @@ We only store the last two computed values, reducing space complexity to O(1).
 - We start with the base values (1 step → 1 way, 2 steps → 2 ways).
 - We iteratively compute the next step using a + b (Sum of the previous two steps).
 
-## Performance and Complexity Analysis
+## 3.Performance and Complexity Analysis
 
 | Metric               | Value        | Performance                            |
 | -------------------- | ------------ | -------------------------------------- |
@@ -72,6 +72,6 @@ We only store the last two computed values, reducing space complexity to O(1).
 | **Runtime**          | **42 ms**    | Beats **0.11%** of Python submissions  |
 | **Memory Usage**     | **17.74 MB** | Beats **48.60%** of Python submissions |
 
-### LeetCode Submission
+## 4.LeetCode Submission
 
 [View My Submission](https://leetcode.com/problems/climbing-stairs/submissions/1562324621/)
