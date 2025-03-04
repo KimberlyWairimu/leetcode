@@ -43,7 +43,14 @@ Instead of using recursion (which has **O(2ⁿ) exponential time complexity**), 
 
 - If n = 1, there's only 1 way (just 1 step).
 - If n = 2, there are 2 ways (either 1+1 or 2).
-- If n = 3, we can either: - Take a 1-step from n=2, meaning we inherit its count (which is 2). - Take a 2-step from n=1, inheriting its count (which is 1). - Total ways for n=3 = ways(n-1) + ways(n-2) = 2 + 1 = 3.
+- If n = 3, we can either:
+
+  - Take a 1-step from n=2, meaning we inherit its count (which is 2).
+
+  - Take a 2-step from n=1, inheriting its count (which is 1).
+
+  - Total ways for n=3 = ways(n-1) + ways(n-2) = 2 + 1 = 3.
+
   This pattern continues, forming a Fibonacci-like sequence.
 
 **2.Optimizing Space**
